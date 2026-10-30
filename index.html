@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Fuel Prices Analysis</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #eef2f5;
+    text-align: center;
+}
+
+header {
+    background: #123456;
+    color: white;
+    padding: 30px;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+button {
+    background: #123456;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #123456;
+    color: white;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Global Fuel Prices Analysis</h1>
+<p>Understanding Fuel Prices Around the World</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#analysis">Analysis</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<h2>Welcome to Our Project</h2>
+<p>Explore petrol prices across different countries.</p>
+<button onclick="explore()">Explore More</button>
+</section>
+
+<section id="about">
+<h2>About Our Project</h2>
+<p>This project analyzes global fuel prices and
+studies the impact of taxes and crude oil prices.</p>
+</section>
+
+<section id="analysis">
+<h2>Fuel Price Analysis</h2>
+<p>Our project focuses on:</p>
+<p>• Global Petrol Price Comparison</p>
+<p>• Tax Percentage Analysis</p>
+<p>• Fuel Price Categories</p>
+<p>• Brent Crude Oil Comparison</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<input type="text" id="name" placeholder="Enter Your Name">
+<br><br>
+<input type="email" id="email" placeholder="Enter Your Email">
+<br><br>
+<button onclick="submitForm()">Submit</button>
+</section>
+
+<footer>
+<p>Global Fuel Prices Analysis | 2026</p>
+<p>Created by B.Tech CSE Student</p>
+</footer>
+
+<script>
+function explore() {
+    alert("Welcome to Global Fuel Prices Analysis!");
+}
+
+function submitForm() {
+    let name = document.getElementById("name").value;
+
+    if(name == "") {
+        alert("Please enter your name");
+    } else {
+        alert("Thank you " + name + "!");
+    }
+}
+</script>
+
+</body>
+</html>
